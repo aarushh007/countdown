@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f603c8f64d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <span class='heading title'>Countdown to Christmas</span>
+        <div class="time">
+            <div class="thing">
+                <span id="days" class="number">...</span>
+                <span class="label">DAYS</span>
+            </div>
+            <div class="thing">
+                <span id="hours" class="number">...</span>
+                <span class="label">HOURS</span>
+            </div>
+            <div class="thing">
+                <span id="minutes" class="number">...</span>
+                <span class="label">MINUTES</span>
+            </div>
+            <div class="thing">
+                <span id="seconds" class="number">...</span>
+                <span class="label">SECONDS</span>
+            </div>
+        </div>
+    </div>
+        <form id='form'>
+            <div id='modal'>
+                <div>
+                <label required for="name">Name of event</label>
+                <input id='name' type='text' required>
+                </div>
+                <div>
+                <label required for='date'>Date</label>
+                <input id='date' type='date' required>
+                </div>
+                <div>
+                <label for='time'>Time (optional)</label>
+                <input id='time' type='time'>
+                </div>
+                <div>
+                <button type="submit">Add Event
+                </button>
+                </div>
+                <i id='exit' class="fas fa-times-circle"></i>
+            </div>
+        </form>
+    <i class="fas fa-plus" id='edit'></i>
+    <select id="dropdown">
+    </select>
+    <script src="app.js"></script>
+</body>
+</html>
